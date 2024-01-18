@@ -3,9 +3,15 @@ package com.siqueira.workshopmongo.domain;
 import java.io.Serializable;
 import java.util.Objects;
 
+import org.springframework.data.annotation.Id;
+import org.springframework.data.mongodb.core.mapping.Document;
+
+@Document(collection = "user") // Não é necessário o que está entre os (), pois é indificado o nome da classe 
 public class User implements Serializable {
 
 	private static final long serialVersionUID = 1L;
+	
+	@Id
 	private String id;
 	private String name;
 	private String email;
