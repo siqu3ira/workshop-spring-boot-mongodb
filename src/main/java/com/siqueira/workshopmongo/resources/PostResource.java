@@ -8,7 +8,6 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.siqueira.workshopmongo.domain.Post;
-import com.siqueira.workshopmongo.dto.UserDTO;
 import com.siqueira.workshopmongo.services.PostService;
 
 @RestController
